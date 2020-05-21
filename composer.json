@@ -1,0 +1,32 @@
+{
+    "name": "phpvan/settings",
+    "description": "PhpVan Settings package",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tsvetan Topalov",
+            "email": "xtenzive@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "PhpVan\\Settings\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhpVan\\Settings\\SettingsServiceProvider"
+            ]
+        },
+        "aliases": {
+            "PhpVanSettings": "PhpVan\\Settings\\Facades\\PhpVanSettings"
+        }
+    },
+    "require": {
+        "php" : ">=7.3",
+        "laravel/framework": "^6.0|^7.0"
+    }
+}
